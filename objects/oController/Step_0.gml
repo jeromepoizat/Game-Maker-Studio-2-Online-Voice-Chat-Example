@@ -38,4 +38,12 @@ if (voice_client == true){
 			}
 		}
 	}
+	
+	//change microphone
+	for (var i = 0; i < number_of_mics; i += 1){
+		if keyboard_check(ord(string(i+1))){
+			mic_id = i;
+			mic_set = true;
+		}
+	}
 }
